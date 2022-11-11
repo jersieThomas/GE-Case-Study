@@ -1,3 +1,8 @@
+Table of Contents: 
+
+
+
+
 #### Stating The Problem ####
 
 In the first half of 2018, gas turbines 
@@ -7,7 +12,6 @@ faster than expected. This unexpected degradation causes
 unplanned outages and requires unscheduled maintenance. The 
 result is several days of unplanned downtime for our customers 
 and a decreased ability to effectively manage GE inventory.
-
 
 
 #### 1) Merging GE Dataset ####
