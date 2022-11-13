@@ -6,7 +6,7 @@
 **[GE_Tableau.twbx](#ge_tableau)**<br>
 **[Model_Data.csv](#Model_Data.csv)**<br>
 **[final_model.pki](#final_model.pki)**<br>
-
+**GE_Predictive_Model.pki](#ge_predictive_model)**<br>
 
 ***
 
@@ -37,7 +37,13 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 ### Model_Data.csv
 
- A dataset of the variables statistically significant to predicting aircraft remaining useful life
+ A dataset of the variables statistically significant to predicting aircraft remaining useful life.
+
+<br>
+
+### GE_Predictive_Model.ipynb
+
+Jupyter notebook schowcasing the process of building, training, and evaluating the 'best fit' predictive model for the variable 'rul'.
 
 <br>
 
