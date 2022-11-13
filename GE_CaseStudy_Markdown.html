@@ -413,7 +413,7 @@ data using an inner join.</p>
 <h1>Joining the manufacturing_sql_by_esn table</h1>
 <p>We then joined the manufacturing data table to the combined table
 using an inner join. We also fixed a typo in the data, which we describe
-under the “Consistent Data” header</p>
+under the “Consistent Data” header.</p>
 <pre class="r"><code>join_data= inner_join(esn_joined_data, manufacturing_sql_by_esn, na_matches= &#39;na&#39;) </code></pre>
 <pre><code>## Joining, by = &quot;esn&quot;</code></pre>
 <pre class="r"><code>join_data$destination_icao[5448]= &quot;VTUW&quot;</code></pre>
@@ -421,7 +421,7 @@ under the “Consistent Data” header</p>
 <div id="imputing-nulls" class="section level1">
 <h1>Imputing Nulls</h1>
 <p>The reasoning for this step is discussed under the “Consistent Data”
-header, it just needs to be placed here for the dataset to be created
+header, it just needs to be placed here for the data set to be created
 properly.</p>
 <pre class="r"><code>for (i in 1:length(join_data$depart_icao)) {
   if(join_data$depart_icao[i] == &quot;&quot;)
@@ -432,7 +432,7 @@ properly.</p>
 <div id="joining-the-lkp_airport_codes_t-table" class="section level1">
 <h1>Joining the lkp_airport_codes_t table</h1>
 <p>Finally, we joined the airport codes table to our combined table
-using a set of inner joins. We joined this table on both the depart_icao
+using a set of left joins. We joined this table on both the depart_icao
 and the destination_icao columns since we need the coordinates for both
 airports in order to calculate the distance between airports.</p>
 <pre class="r"><code>airport_depart= left_join(join_data, lkp_airport_codes_t, by= c(&quot;depart_icao&quot;= &quot;airport_icao&quot;))
@@ -469,7 +469,7 @@ Tech_Correct = separate(airport_final, datetime, c(&quot;date&quot;, &quot;time&
 <h1>Technically Correct</h1>
 <p>Now that we have ensured data tidiness, we started to make sure the
 data was technically correct. We cleaned the column names using the
-clean names function and also used glimpse to check for data types. We
+clean names function and also used glimpse to check the data types. We
 discovered that we needed to switch the date and time columns to be of
 the date and time data types. We also switched the names of the latitude
 and longitude variables to make them easier to read and understand.</p>
@@ -539,21 +539,20 @@ fields were missing information for their departure and arrival
 airports. Under further investigation, it seems that these planes were
 inspected but did not leave the airport, or possibly were delayed or
 took off and aborted. We ordered the data by esn and flight cycle and
-realized that the data fields with emoty strings for depart_icao and
+realized that the data fields with empty strings for depart_icao and
 destination_icao and realized that the destination_icao of the record
 before and the depart_icao of the record after were the same. We
 concluded that these planes in fact did not leave the airport for some
-reason but were still inspected. We use for loops to impute the
+reason but were still inspected. We used for loops to impute the
 departure airport information of the flight directly before to get rid
 of the nulls and allow R to fill in the information for latitude,
 longitude, and distance (which is 0 for all of the planes we imputed in
 this case). This imputation allows us to avoid nulls and to understand
 that these planes did not move but their inspection values still may be
-relevant for predicting the remaining usueful life of the engines,
-therefore we opted to keep them in the dataset.</p>
-<p>The code we used to do this is under the “Imputing Nulls” header. We
-had to put it at that step in order for the nulls to correctly be
-imputed.</p>
+relevant for predicting the remaining useful life of the engines,
+therefore we opted to keep them in the data set.The code we used to do
+this is under the “Imputing Nulls” header. We had to put it at that step
+in order for the nulls to correctly be imputed.</p>
 <p>While creating our model, we noticed an error from the original data.
 For ESN 99176 and flight cycle 123, the destination_icao field has a
 typo. It was meant to be “VTUW”, but was inputted incorrectly as “VTUO”.
@@ -573,7 +572,7 @@ and that some column were greater than or equal to 0. The only column
 that did not pass the pointblank validation was time. This is because
 our time column is of the hms type, and not POSIXct. We have confirmed
 hms to be a valid data type for the time, and so this failing result can
-be diregarded.</p>
+be disregarded.</p>
 <pre class="r"><code>pacman::p_load(pointblank)
 act= action_levels(warn_at= 0.01, notify_at= 0.01)
 agent= create_agent(tbl= Tech_Correct, actions= act)
@@ -987,7 +986,7 @@ padding: 0;
       <td colspan="14" class="gt_heading gt_title gt_font_normal" style="color: #444444; font-size: 28px; text-align: left; font-weight: 500;">Pointblank Validation</td>
     </tr>
     <tr>
-      <td colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-size: 12px; text-align: left;"><span style="text-decoration-style:solid;text-decoration-color:#ADD8E6;text-decoration-line:underline;text-underline-position:under;color:#333333;font-variant-numeric:tabular-nums;padding-left:4px;margin-right:5px;padding-right:2px;">[2022-11-13|16:19:36]</span></p>
+      <td colspan="14" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-size: 12px; text-align: left;"><span style="text-decoration-style:solid;text-decoration-color:#ADD8E6;text-decoration-line:underline;text-underline-position:under;color:#333333;font-variant-numeric:tabular-nums;padding-left:4px;margin-right:5px;padding-right:2px;">[2022-11-13|17:41:15]</span></p>
 <div style="height:25px;"><span style="background-color:#9933CC;color:#FFFFFF;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 5px;font-weight:bold;border:solid 1px #9933CC;padding:2px 15px 2px 15px;font-size:smaller;">data frame</span>
 <span style="background-color:none;color:#222222;padding:0.5em 0.5em;position:inherit;margin:5px 10px 5px -4px;font-weight:bold;border:solid 1px #9933CC;padding:2px 15px 2px 15px;font-size:smaller;">Tech_Correct</span><span style="background-color:#E5AB00;color:white;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 5px;font-weight:bold;border:solid 1px #E5AB00;padding:2px 15px 2px 15px;font-size:smaller;">WARN</span>
 <span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #E5AB00;padding:2px 15px 2px 15px;font-size:smaller;">0.01</span>
@@ -2445,9 +2444,9 @@ padding: 0;
   </tbody>
   <tfoot class="gt_sourcenotes">
     <tr>
-      <td class="gt_sourcenote" colspan="14"><span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin-left:10px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;padding:2px 10px 2px 10px;">2022-11-13 16:19:37 EST</span>
+      <td class="gt_sourcenote" colspan="14"><span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin-left:10px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;padding:2px 10px 2px 10px;">2022-11-13 17:41:16 EST</span>
 <span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;margin:5px 1px 5px 0;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">1.4 s</span>
-<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 1px 5px -1px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">2022-11-13 16:19:38 EST</span></td>
+<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 1px 5px -1px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">2022-11-13 17:41:18 EST</span></td>
     </tr>
   </tfoot>
   
