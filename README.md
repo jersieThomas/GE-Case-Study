@@ -1,7 +1,7 @@
 ### File Table of Contents *(In Order of Project Process):*
 
 **[GE_Project_Markdown.html](#ge_project_markdown)**<br>
-**[GE_Data_Corrected.csv](#ge_data_corrected)**<br>
+**[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_Project_Profile.ipynb](#ge_project_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
 **[n/a](#predictive-modeling)**<br>
@@ -17,7 +17,7 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 <br>
 
-### GE_Data_Corrected 
+### GE_Cleaned_Data_Corrected 
 
  Technically corrected, tidy, and consistency tested holistic dataset.
 
