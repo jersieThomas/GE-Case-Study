@@ -2,7 +2,7 @@
 
 **[GE_CaseStudy_Markdown.html](#ge_casestudy_markdown)**<br>
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
-**[GE_Project_Profile.ipynb](#ge_project_profile)**<br>
+**[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
 **[Combined_Vars.csv](#combined_vars.csv)**<br>
 **[final_model.pki](#final_model.pki)**<br>
