@@ -1,4 +1,4 @@
-#### Table of Contents: 
+#### File Table of Contents: 
 
 **[Installation Requirements](#installation-requirements)**<br>
 **[Merging GE Dataset](#merging-ge-dataset)**<br>
