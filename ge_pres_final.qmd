@@ -54,7 +54,7 @@ source("source_file.md")
 
 ## Step 2: Create Statistical Summaries
 
-Next, we utilized created a Jupyter Notebook and utilized autoviz tools to create statistical summaries and visualizations of the data
+Next, we created a Jupyter Notebook and utilized autoviz tools to create statistical summaries and visualizations of the data
 
 -   These summaries helped us to determine how variables were correlated
     -   We used these insights to create our final predictive model
