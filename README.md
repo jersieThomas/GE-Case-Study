@@ -8,6 +8,7 @@
 **[Model_Data.csv](#Model_Data.csv)**<br>
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
 **[final_model.pki](#final_model.pki)**<br>
+**[Presentation_Images.zip](#presentation_images.zip)**<br>
 ***
 
 
@@ -19,7 +20,7 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 ### GE_Cleaned_Data_Corrected.csv 
 
-CSV file of a technically corrected, tidy, and consistency tested holistic dataset.
+.CSV file of a technically corrected, tidy, and consistency tested holistic dataset.
 
 <br>
 
@@ -37,7 +38,7 @@ Tableau interactive dashboard to showcase relevant features and interesting resu
 
 ### GE_Model_groupby.html
 
-Html of an RMarkdown indicating which aggregated variables will be used for the predictive model.
+.Html of an RMarkdown indicating which aggregated variables was used for the predictive model.
 
 <br>
 
@@ -56,5 +57,11 @@ Jupyter notebook schowcasing the process of building, training, and evaluating t
 ### final_model.pki
 
  A pickle file of the machine learning model
+
+<br>
+
+### Presentation_Images.zip
+
+.Zip file holding the images used in the presentation, highlighting key takeaways.
 
 <br>
