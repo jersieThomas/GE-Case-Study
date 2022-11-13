@@ -5,9 +5,8 @@
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
 **[Model_Data.csv](#Model_Data.csv)**<br>
-**[final_model.pki](#final_model.pki)**<br>
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
-
+**[final_model.pki](#final_model.pki)**<br>
 ***
 
 
