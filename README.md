@@ -4,6 +4,7 @@
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
+**[GE_Model_groupby.html](#ge_model_groupby.html)**<br>
 **[Model_Data.csv](#Model_Data.csv)**<br>
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
 **[final_model.pki](#final_model.pki)**<br>
@@ -31,6 +32,12 @@ Jupyter notebook using **Pandas_Profiling** to create a series of automated stat
 ### GE_Tableau
 
 Tableau interactive dashboard to showcase relevant features and interesting results.
+
+<br>
+
+### GE_Model_groupby.html
+
+Html of an RMarkdown indicating which aggregated variables will be used for the predictive model.
 
 <br>
 
