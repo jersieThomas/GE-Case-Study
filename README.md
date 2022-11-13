@@ -56,7 +56,7 @@ Jupyter notebook schowcasing the process of building, training, and evaluating t
 
 ### final_model.pki
 
- A pickle file of the machine learning model
+ A pickle file of the machine learning model.
 
 <br>
 
