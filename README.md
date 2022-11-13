@@ -23,7 +23,7 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 <br>
 
-### GE_Project_Profile
+### GE_CaseStudy_Profile
 
  Jupyter notebook using **Pandas_Profiling** to create a series of automated statistics.
 
