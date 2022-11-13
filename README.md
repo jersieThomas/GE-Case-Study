@@ -4,7 +4,7 @@
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
-**[Combined_Vars.csv](#combined_vars.csv)**<br>
+**[Model_Data.csv](#Model_Data.csv)**<br>
 **[final_model.pki](#final_model.pki)**<br>
 
 
@@ -35,7 +35,7 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 <br>
 
-### Combined_Vars.csv
+### Model_Data.csv
 
  A dataset of the variables statistically significant to predicting aircraft remaining useful life
 
