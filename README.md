@@ -4,8 +4,8 @@
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_Project_Profile.ipynb](#ge_project_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
-**[n/a](#predictive-modeling)**<br>
-**[n/a](#ge-application)**<br>
+**[Combined_Vars.csv](#combined_vars.csv)**<br>
+**[final_model.pki](#final_model.pki)**<br>
 
 
 ***
@@ -35,14 +35,14 @@ RMarkdown html of the merged dataset used for starting the case study.
 
 <br>
 
-### NA 
+### Combined_Vars.csv
 
- NA
+ A dataset of the variables statistically significant to predicting aircraft remaining useful life
 
 <br>
 
-### NA
+### final_model.pki
 
- NA
+ A pickle file of the machine learning model
 
 <br>
