@@ -4,12 +4,12 @@
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
-**[GE_Model_groupby.html](#ge_model_groupby.html)**<br>
-**[Model_Data.csv](#Model_Data.csv)**<br>
+**[GE_Model_groupby,html](#ge_model_groupby)**<br>
+**[Model_Data.csv](#Model_Data)**<br>
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
-**[final_model.pki](#final_model.pki)**<br>
-**[Presentation_Images.zip](#presentation_images.zip)**<br>
-**[GE_Pres_Final.qmb](#ge_pres_final.qmb)**<br>
+**[final_model.pki](#final_model)**<br>
+**[Presentation_Images.zip](#presentation_images)**<br>
+**[GE_Pres_Final.qmb](#ge_pres_final)**<br>
 ***
 
 
