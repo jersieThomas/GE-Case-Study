@@ -9,6 +9,7 @@
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
 **[final_model.pki](#final_model.pki)**<br>
 **[Presentation_Images.zip](#presentation_images.zip)**<br>
+**[GE_Pres_Final.qmb](#ge_pres_final.qmb)**<br>
 ***
 
 
@@ -63,5 +64,11 @@ Jupyter notebook schowcasing the process of building, training, and evaluating t
 ### Presentation_Images.zip
 
 .Zip file holding the images used in the presentation, highlighting key takeaways.
+
+<br>
+
+### GE_Pres_Final.qmb
+
+Presentation highlighting the process of the case study.
 
 <br>
