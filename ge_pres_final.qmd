@@ -1,0 +1,84 @@
+---
+title: "GE Aerospace Case Study"
+author: "Samantha Erne, Jake Holroyd, Jersie Thomas"
+editor: visual
+source: https://github.com/GEProject/GEProject/blob/main/ge_project_markdown.Rmd
+format:
+  revealjs: 
+    theme: [default]
+    logo: https://www.ge.com/news/themes/custom/genewsroom/logo.svg
+    footer: "ISA 401- Miami University"
+    fontcolor: "white"
+    backgroundcolor: "navy"
+---
+
+## Problem Statement
+
+The problem that GE Aerospace is currently facing is that aircraft with GE gas turbines are experiencing unscheduled outages
+
+-   This is because the engines are nearing the end of their remaining useful life faster than expected
+
+## Case Study Outline {background-image="https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/gas-turbines/7f/hero-7f-gas-turbine.png" background-size="500px" background-position="50% 75%"}
+
+For this case study, our goal was to create a model that would accurately predict the remaining useful life (RUL) of GE Engines
+
+-   Accurately predicting the RUL of GE Engines will allow for more accurate scheduling and maintenance
+
+## Our Process
+
+In order to solve the RUL problem, we took the following steps:
+
+-   Merge and Clean the Data
+
+-   Create Statistical Summaries
+
+-   Visualize the Data
+
+-   Create the Model
+
+-   Host an App
+
+## Step 1: Merge and Clean the Data
+
+We started the process by merging the data from the 7 CSV files into one R data frame
+
+-   We then checked that the data was tidy, technically correct, and consistent
+    -   We changed some column names and imputed null fields in order to achieve a clean data set
+-   We then exported the cleaned data into a CSV file to use for the following steps
+
+## Step 1: Merge and Clean the Data
+
+```{r}
+source("source_file.md")
+```
+
+## Step 2: Create Statistical Summaries
+
+Next, we utilized created a Jupyter Notebook and utilized autoviz tools to create statistical summaries and visualizations of the data
+
+-   These summaries helped us to determine how variables were correlated
+    -   We used these insights to create our final predictive model
+
+## Step 3: Visualize the Data
+
+Next, we utilized Tableau to create dashboards showcasing our clean and merged data
+
+-   These dashbaords also helped to show relationships between predictors in the dataset
+
+-   The dashabords also provided insights on GE's clients and where they operate out of
+
+## Step 4: Create the Model
+
+Then, we worked to create a model that would accurately predict RUL's of GE engines
+
+-   We decided how to aggregate each field in the data so that we could have one record per engine
+
+-   We ran regressions based on what we thought the most preidtcive variables were
+
+    -   We tested models with different vairables until we decided on our best model
+
+-   Our final model had an R-square of X and X predictors
+
+## Step 5: Host an App
+
+Finally, we used Hugging Spaces to host a permanent app based on our predicitve model
