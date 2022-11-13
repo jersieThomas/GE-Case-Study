@@ -1,6 +1,6 @@
 ### File Table of Contents *(In Order of Project Process):*
 
-**[GE_Project_Markdown.html](#ge_project_markdown)**<br>
+**[GE_CaseStudy_Markdown.html](#ge_casestudy_markdown)**<br>
 **[GE_Cleaned_Data_Corrected.csv](#ge_data_corrected)**<br>
 **[GE_Project_Profile.ipynb](#ge_project_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
@@ -11,7 +11,7 @@
 ***
 
 
-### GE_Project_Markdown 
+### GE_CaseStudy_Markdown 
 
 RMarkdown html of the merged dataset used for starting the case study.
 
