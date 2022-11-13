@@ -10,27 +10,27 @@
 ***
 
 
-### GE_CaseStudy_Markdown 
+### GE_CaseStudy_Markdown.html 
 
 RMarkdown html of the merged dataset used for starting the case study.
 
 <br>
 
-### GE_Cleaned_Data_Corrected 
+### GE_Cleaned_Data_Corrected.csv 
 
- Technically corrected, tidy, and consistency tested holistic dataset.
+CSV file of a technically corrected, tidy, and consistency tested holistic dataset.
 
 <br>
 
-### GE_CaseStudy_Profile
+### GE_CaseStudy_Profile.ipynb
 
- Jupyter notebook using **Pandas_Profiling** to create a series of automated statistics.
+Jupyter notebook using **Pandas_Profiling** to create a series of automated statistics.
 
 <br>
 
 ### GE_Tableau
 
- Tableau interactive dashboard to showcase relevant features and interesting results.
+Tableau interactive dashboard to showcase relevant features and interesting results.
 
 <br>
 
