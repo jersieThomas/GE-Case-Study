@@ -4,7 +4,7 @@
 **[GE_Cleaned_Data_Corrected.csv](#ge_cleaned_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
-**[GE_Model_groupby,html](#ge_model_groupby)**<br>
+**[GE_Model_groupby.html](#ge_model_groupby)**<br>
 **[Model_Data.csv](#model_data)**<br>
 **[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
 **[final_model.pki](#final_model)**<br>
