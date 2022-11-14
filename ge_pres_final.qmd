@@ -2,7 +2,6 @@
 title: "GE Aerospace Case Study"
 author: "Samantha Erne, Jake Holroyd, Jersie Thomas"
 editor: visual
-source: https://github.com/GEProject/GEProject/blob/main/ge_project_markdown.Rmd
 format:
   revealjs: 
     theme: [default]
@@ -14,15 +13,15 @@ format:
 
 ## Problem Statement
 
-The problem that GE Aerospace is currently facing is that aircraft with GE gas turbines are experiencing unscheduled outages
+The problem that GE Aerospace is facing is that aircrafts using GE gas turbine engines are experiencing unscheduled outages
 
--   This is because the engines are nearing the end of their remaining useful life faster than expected
+-   The engines are nearing the end of their remaining useful life faster than expected
 
 ## Case Study Outline {background-image="https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/gas-turbines/7f/hero-7f-gas-turbine.png" background-size="500px" background-position="50% 75%"}
 
 For this case study, our goal was to create a model that would accurately predict the remaining useful life (RUL) of GE Engines
 
--   Accurately predicting the RUL of GE Engines will allow for more accurate scheduling and maintenance
+-   This will allow for more accurate scheduling and maintenance
 
 ## Our Process
 
@@ -40,32 +39,88 @@ In order to solve the RUL problem, we took the following steps:
 
 ## Step 1: Merge and Clean the Data
 
-We started the process by merging the data from the 7 CSV files into one R data frame
+We started the process by merging the data from the 7 CSV files into one R data frame. Then we...
 
--   We then checked that the data was tidy, technically correct, and consistent
-    -   We changed some column names and imputed null fields in order to achieve a clean data set
--   We then exported the cleaned data into a CSV file to use for the following steps
+-   Checked that the data was tidy, technically correct, and consistent
+    -   Tweaked column names and imputed null fields to achieve a clean data set
+    
+    -   Corrected typos
+    
+-   Exported the cleaned data into a CSV file
+
+## Step 1: Merge and Clean the Data
+Below is a snapshot of the cleaned dataset, pulled directly from the CSV
+
+```{r}
+library(tidyverse)
+Tech_Correct = read_csv("/Users/sammieerne/Downloads/ge_cleaned_data_corrected.csv") 
+head(Tech_Correct)
+```
+## Step 1: Merge and Clean the Data
+
+Below is a summary of the cleaned and merged dataset
+
+```{r}
+summary(Tech_Correct)
+```
 
 ## Step 1: Merge and Clean the Data
 
+Below is a graphic showing that we were able to impute all null values in the data
+
 ```{r}
-source("source_file.md")
+pacman::p_load(DataExplorer)
+plot_missing(Tech_Correct)
 ```
 
 ## Step 2: Create Statistical Summaries
 
-Next, we created a Jupyter Notebook and utilized autoviz tools to create statistical summaries and visualizations of the data
+Next, we created a Jupyter Notebook and utilized autoviz tools to create statistical summaries of the data
 
 -   These summaries helped us to determine how variables were correlated
     -   We used these insights to create our final predictive model
+  
+## Step 2: Create Statistical Summaries {background-image="https://github.com/sammieerne/project_code/blob/main/project_1.PNG?raw=true" background-size="600px" background-position="50% 65%"}
+
+This visualization is a heat map of correlation between the variables
+
+## Step 2: Create Statistical Summaries {background-image="https://github.com/sammieerne/project_code/blob/main/project_2.PNG?raw=true" background-size="900px" background-position="50% 65%"}
+
+This visualization shows which variables are constants
+
+## Step 2: Create Statistical Summaries {background-image="https://github.com/sammieerne/project_code/blob/main/project_3.PNG?raw=true" background-size="900px" background-position="50% 65%"}
+
+This visualization provides a summary of the data set
+
+## Step 2: Create Statistical Summaries {background-image="https://github.com/sammieerne/project_code/blob/main/project_4.PNG?raw=true" background-size="600px" background-position="50% 70%"}
+
+This visualization shows the interaction between RUL and flight cycle
+
+## Step 2: Create Statistical Summaries {background-image="https://github.com/sammieerne/project_code/blob/main/project_5.PNG?raw=true" background-size="600px" background-position="50% 70%"}
+
+This visualization shows the interaction between RUL and distance
+
 
 ## Step 3: Visualize the Data
 
-Next, we utilized Tableau to create dashboards showcasing our clean and merged data
+Next, we used Tableau to create dashboards showcasing our clean and merged data
 
--   These dashbaords also helped to show relationships between predictors in the dataset
+-   These dashboards helped  show relationships between predictors in the data set
 
--   The dashabords also provided insights on GE's clients and where they operate out of
+-   The dashboards also provided insights on GE's clients
+
+## Step 3: Visualize the Data {background-image="https://github.com/sammieerne/project_code/blob/main/tableau_1.png?raw=true" background-size="500px" background-position="50% 80%"}
+
+The visualizations below show distance and flight cycles plotted against RUL, lines of best fit, and average values by customer
+
+
+## Step 3: Visualize the Data {background-image="https://github.com/sammieerne/project_code/blob/main/tableau_2.png?raw=true" background-size="500px" background-position="50% 80%"}
+
+This set of visualizations shows correlation scatter plots with lines of best fit
+
+## Step 3: Visualize the Data {background-image="https://github.com/sammieerne/project_code/blob/main/tableau_3.png?raw=true" background-size="500px" background-position="50% 80%"}
+
+This set of visualizations shows animations of where the engines are travelling and how distance is affecting RUL
 
 ## Step 4: Create the Model
 
@@ -73,12 +128,31 @@ Then, we worked to create a model that would accurately predict RUL's of GE engi
 
 -   We decided how to aggregate each field in the data so that we could have one record per engine
 
--   We ran regressions based on what we thought the most preidtcive variables were
+-   We ran regressions based on what we thought the most predictive variables were
 
-    -   We tested models with different vairables until we decided on our best model
+    -   We tested models with different variables until we decided on our best model
+    
+## Step 4: Create the Model {background-image="https://github.com/sammieerne/project_code/blob/main/validation_model.png?raw=true" background-size="450px" background-position="50% 80%"}
 
--   Our final model had an R-square of X and X predictors
+-   Our final model had a mean R-square of 0.6220, and RMSE of 30, and 8 predictors
 
 ## Step 5: Host an App
 
-Finally, we used Hugging Spaces to host a permanent app based on our predicitve model
+Finally, we used Hugging Spaces to host a permanent app to showcase our predictive model
+
+
+
+## Our Insights {background-image="https://github.com/sammieerne/project_code/blob/main/model_validation1.png?raw=true" background-size="900px" background-position="50% 75%"}
+
+We were able to utilize the CSV files provided to create a model with less variables and more accurate predictions of RUL. 
+
+
+
+## Closing Remarks {background-image="https://mms.businesswire.com/media/20220718005465/en/1515995/5/GE_Aerospace_Logo.jpg" background-size="700px" background-position="50% 75%"}
+
+Special Thanks to:
+
+- GE Aerospace
+
+- Dr. Fadel Megahed
+
