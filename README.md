@@ -6,9 +6,8 @@
 **[GE_Tableau.twbx](#ge_tableau)**<br>
 **[GE_Model_groupby.html](#ge_model_groupby)**<br>
 **[Model_Data.csv](#model_data)**<br>
-**[GE_Predictive_Model.pki](#ge_predictive_model)**<br>
+**[GE_Predictive_Model_And_App.ipynb](#ge_predictive_model)**<br>
 **[final_model.pki](#final_model)**<br>
-**[Presentation_Images.zip](#presentation_images)**<br>
 **[GE_Pres_Final.qmb](#ge_pres_final)**<br>
 ***
 
@@ -49,9 +48,9 @@ Tableau interactive dashboard to showcase relevant features and interesting resu
 
 <br>
 
-### GE_Predictive_Model
+### GE_Predictive_Model_And_App
 
-Jupyter notebook schowcasing the process of building, training, and evaluating the 'best fit' predictive model for the variable 'rul'.
+Jupyter notebook schowcasing the process of building, training, and evaluating the 'best fit' predictive model for the variable 'rul'. The model is then created into an embedded app.
 
 <br>
 
@@ -61,11 +60,6 @@ Jupyter notebook schowcasing the process of building, training, and evaluating t
 
 <br>
 
-### Presentation_Images
-
-.Zip file holding the images used in the presentation, highlighting key takeaways.
-
-<br>
 
 ### GE_Pres_Final
 
