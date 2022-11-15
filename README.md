@@ -1,6 +1,6 @@
 ### File Table of Contents *(In Order of Project Process):*
 
-**[GE_CaseStudy_Markdown.html](#ge_casestudy_markdown)**<br>
+**[GE_CaseStudy_Github.io](#ge_casestudy_github)**<br>
 **[GE_Cleaned_Data_Corrected.csv](#ge_cleaned_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
@@ -13,14 +13,14 @@
 
 
 ### GE_CaseStudy_Markdown 
-
-RMarkdown html of the merged dataset used for starting the case study.
+####*(html located in GE_CaseStudy_Github.io)*
+RMarkdown of the merged dataset used for starting the case study.
 
 <br>
 
 ### GE_Cleaned_Data_Corrected 
 
-.CSV file of a technically corrected, tidy, and consistency tested holistic dataset.
+Technically corrected, tidy, and consistency tested holistic dataset.
 
 <br>
 
@@ -37,8 +37,8 @@ Tableau interactive dashboard to showcase relevant features and interesting resu
 <br>
 
 ### GE_Model_groupby
-
-.Html of an RMarkdown indicating which aggregated variables was used for the predictive model.
+####*(html located in GE_CaseStudy_Github.io)*
+RMarkdown indicating which aggregated variables was used for the predictive model.
 
 <br>
 
@@ -62,7 +62,7 @@ Jupyter notebook schowcasing the process of building, training, and evaluating t
 
 
 ### GE_Pres_Final
-
-Presentation highlighting the process of the case study.
+####*(html located in GE_CaseStudy_Github.io)*
+Quarto presentation highlighting the process of the case study.
 
 <br>
