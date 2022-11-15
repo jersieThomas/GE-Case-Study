@@ -334,6 +334,7 @@
 <ul>
 <li>The engines are nearing the end of their remaining useful life faster than expected</li>
 </ul>
+<p>Note: The data used in this case study is fictional and not actually GE Aerospace data</p>
 </section>
 <section id="case-study-outline" class="slide level2" data-background-image="https://www.ge.com/content/dam/gepower-new/global/en_US/images/gas-new-site/products/gas-turbines/7f/hero-7f-gas-turbine.png" data-background-size="500px" data-background-position="50% 75%">
 <h2>Case Study Outline</h2>
@@ -485,7 +486,7 @@
 <h2>Step 1: Merge and Clean the Data</h2>
 <p>Below is a graphic showing that we were able to impute all null values in the data</p>
 
-<img data-src="ge_pres_final_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="ge_pres_final_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section id="step-2-create-statistical-summaries" class="slide level2">
 <h2>Step 2: Create Statistical Summaries</h2>
 <p>Next, we created a Jupyter Notebook and utilized autoviz tools to create statistical summaries of the data</p>
@@ -547,19 +548,22 @@
 </ul></li>
 </ul>
 </section>
-<section id="step-4-create-the-model-1" class="slide level2" data-background-image="https://github.com/sammieerne/project_code/blob/main/validation_model.png?raw=true" data-background-size="450px" data-background-position="50% 80%">
+<section id="step-4-create-the-model-1" class="slide level2" data-background-image="https://github.com/sammieerne/project_code/blob/main/project_6.PNG?raw=true" data-background-size="800px" data-background-position="50% 70%">
 <h2>Step 4: Create the Model</h2>
 <ul>
-<li>Our final model had a mean R-square of 0.6220, and RMSE of 30, and 8 predictors</li>
+<li>Our final model had a mean R-square of 0.66 to 0.9055 through different validation techniques, an RMSE of 16.17 to 30, and 8 predictors</li>
 </ul>
 </section>
 <section id="step-5-host-an-app" class="slide level2">
 <h2>Step 5: Host an App</h2>
-<p>Finally, we used Hugging Spaces to host a permanent app to showcase our predictive model</p>
+<p>Finally, we hosted a gradio-based permanent app to showcase our predictive model</p>
+<ul>
+<li>Our app is interactive and allows users to input values for predictor variables and displays the expected RUL on the screen</li>
+</ul>
 </section>
-<section id="our-insights" class="slide level2" data-background-image="https://github.com/sammieerne/project_code/blob/main/model_validation1.png?raw=true" data-background-size="900px" data-background-position="50% 75%">
+<section id="our-insights" class="slide level2" data-background-image="https://github.com/sammieerne/project_code/blob/main/model_validation1.png?raw=true" data-background-size="900px" data-background-position="50% 65%">
 <h2>Our Insights</h2>
-<p>We were able to utilize the CSV files provided to create a model with less variables and more accurate predictions of RUL.</p>
+<p>We were able to utilize the CSV files provided to create a model with less variables and more accurate predictions of RUL</p>
 </section>
 <section id="closing-remarks" class="slide level2" data-background-image="https://mms.businesswire.com/media/20220718005465/en/1515995/5/GE_Aerospace_Logo.jpg" data-background-size="700px" data-background-position="50% 75%">
 <h2>Closing Remarks</h2>
