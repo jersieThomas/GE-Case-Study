@@ -61,7 +61,7 @@
 
 ### final_model
 
-- A pickle file of the machine learning model.
+- A pickle file of the machine learning model for easy storing.
 
 <br>
 
