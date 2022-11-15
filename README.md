@@ -1,6 +1,6 @@
 ### File Table of Contents *(In Order of Project Process):*
 
-**[GE_CaseStudy_Github.io](#ge_casestudy_github)**<br>
+**[GE_CaseStudy_Markdown.html](#ge_casestudy_markdown)**<br>
 **[GE_Cleaned_Data_Corrected.csv](#ge_cleaned_data_corrected)**<br>
 **[GE_CaseStudy_Profile.ipynb](#ge_casestudy_profile)**<br>
 **[GE_Tableau.twbx](#ge_tableau)**<br>
